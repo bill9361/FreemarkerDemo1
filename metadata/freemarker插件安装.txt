@@ -1,0 +1,9 @@
+freemarker模板文件使用jboss tools下提供的FreeMarker IDE
+
+在线安装的方法是：Help –> Install New Software 点击and
+
+再出来的对话框中的Location中输入：http://download.jboss.org/jbosstools/updates/development/indigo/
+
+name随便取一个即可。然后会列出来所有可用的插件，如果只需要安装FreeMarker IDE，可以在 JBoss Application Development 下找到并选中它，然后根据向导即可安装成功。
+
+ 退出Eclipse再重启，在window --> Preferences 左边的树形栏里出现FreeMarker Editor一项新的内容。

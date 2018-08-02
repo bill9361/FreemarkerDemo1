@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Freemarker Template</title>
+</head>
+<body>
+Freemarker Template
+<hr>
+获取字符串数据：<br>
+data:${hello}
+<hr>
+获取对象数据：<br>
+PersonId:${person.id}
+<br>
+PersonName:${person.name}
+<hr>
+获取List集合数据：<br>
+<#list personList as p>
+PersonId:${p.id}  PersonName:${p.name}
+<br>
+</#list>
+<hr>
+获取Map集合数据：<br>
+<#list strMap?keys as itemKey>
+	${itemKey} == ${strMap[itemKey]}
+</#list>
+
+<hr>
+获取List&lt;Map&lt;String,String&gt;&gt;集合数据：<br>
+<#list strListMap as strMap>
+	<#list strMap?keys as itemKey>
+		${itemKey} == ${strMap[itemKey]}
+	</#list>
+	<br>
+</#list>
+</body>
+</html>
